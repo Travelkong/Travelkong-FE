@@ -130,7 +130,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out"
       },
       fontFamily: {
-        sans: ["Lato", "sans-serif", ...defaultTheme.fontFamily.sans],
+        sans: ["Lato", "sans-serif"],
         serif: ["Merriweather", "serif"]
       }
     }

@@ -1,6 +1,6 @@
 import React from "react"
 
-function HeaderSearchHistoryComponent(): JSX.Element {
+export default function HeaderSearchHistoryComponent(): JSX.Element {
     return (
         <div>
             

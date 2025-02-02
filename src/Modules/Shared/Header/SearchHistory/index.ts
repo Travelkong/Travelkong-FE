@@ -1,0 +1,1 @@
+export { default as SearchHistory } from "./search-history.component"

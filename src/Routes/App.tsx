@@ -9,7 +9,7 @@ interface DefaultLayoutProps {
   children: React.ReactNode
 }
 
-interface RouteProps {
+interface RouteConfig {
   path: string
   component: React.ComponentType
   layout?: React.ComponentType<DefaultLayoutProps> | null
@@ -17,35 +17,33 @@ interface RouteProps {
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        {routes.map((route: RouteProps, index: number) => {
-          let Layout
+    <Routes>
+      {routes.map((route: RouteConfig, index: number) => {
+        let Layout
 
-          if (route.layout) {
-            Layout = route.layout
-          } else if (route.layout === null) {
-            Layout = Fragment
-          } else {
-            Layout = DefaultLayout
-          }
+        if (route.layout) {
+          Layout = route.layout
+        } else if (route.layout === null) {
+          Layout = Fragment
+        } else {
+          Layout = DefaultLayout
+        }
 
-          const Element = route.component
+        const Element = route.component
 
-          return (
-            <Route
-              key={index}
-              path={route.path}
-              element={
-                <Layout>
-                  <Element />
-                </Layout>
-              }
-            />
-          )
-        })}
-      </Routes>
-    </Router>
+        return (
+          <Route
+            key={index}
+            path={route.path}
+            element={
+              <Layout>
+                <Element />
+              </Layout>
+            }
+          />
+        )
+      })}
+    </Routes>
   )
 }
 

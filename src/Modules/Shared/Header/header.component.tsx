@@ -12,3 +12,5 @@ function HeaderComponent(): JSX.Element {
     </header>
   )
 }
+
+export default HeaderComponent

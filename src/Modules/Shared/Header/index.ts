@@ -1,1 +1,1 @@
-import { NavbarComponent } from "./Navbar"
+export { default as HeaderComponent } from "./header.component";

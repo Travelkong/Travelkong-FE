@@ -1,3 +1,5 @@
+import { HeaderComponent } from "@/Modules/Shared/Header"
+
 import React from "react"
 
 export type DefaultLayoutProps = {
@@ -7,5 +9,10 @@ export type DefaultLayoutProps = {
 export default function DefaultLayout({
   children,
 }: DefaultLayoutProps): React.JSX.Element {
-  return <div>{children}</div>
+  return (
+    <div>
+      <HeaderComponent />
+      {children}
+    </div>
+  )
 }

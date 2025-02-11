@@ -4,7 +4,7 @@ export default function LogoComponent(): JSX.Element {
   return (
     <NavLink to="/">
       <div className="">
-        <svg></svg>
+        <img src="/assets/img/logo.png" alt="" />
       </div>
     </NavLink>
   )

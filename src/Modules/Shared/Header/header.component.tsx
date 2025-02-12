@@ -1,15 +1,12 @@
-// import LogoComponent from "./Logo/logo.component";
-// import { NavbarComponent } from "./Navbar";
-import NavbarComponent2 from "./Navbar/navbar.component";
+import LogoComponent from "./Logo/logo.component";
+import { NavbarComponent } from "./Navbar";
 
 function HeaderComponent(): JSX.Element {
   return (
-    <header className="">
-        <div className="">
-            {/* <LogoComponent /> */}
-            
-            <NavbarComponent2 />
-        </div>
+    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
+        <LogoComponent />
+
+        <NavbarComponent />
     </header>
   )
 }

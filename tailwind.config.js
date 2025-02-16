@@ -131,7 +131,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Lato", "sans-serif"],
-        serif: ["Merriweather", "serif"]
+        serif: ["Merriweather", "serif"],
+        DM: ["DM Serif Display", "sans-serif"]
       }
     }
   },

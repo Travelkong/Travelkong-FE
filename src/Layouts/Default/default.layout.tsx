@@ -1,3 +1,4 @@
+import { FooterComponent } from "@/Modules/Shared/Footer"
 import { HeaderComponent } from "@/Modules/Shared/Header"
 
 import React from "react"
@@ -12,7 +13,10 @@ export default function DefaultLayout({
   return (
     <div>
       <HeaderComponent />
+
       {children}
+
+      <FooterComponent />
     </div>
   )
 }

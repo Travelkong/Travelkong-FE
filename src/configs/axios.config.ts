@@ -1,4 +1,4 @@
-import axios, { AxiosError, AxiosInstance, AxiosResponse } from "axios"
+import axios, { type AxiosError, type AxiosInstance, type AxiosResponse } from "axios"
 
 const instance: AxiosInstance = axios.create({
     baseURL: `${import.meta.env.VITE_BACKEND_URL}`,

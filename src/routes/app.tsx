@@ -1,6 +1,6 @@
 import "@/Styles/index.css"
-import routes from "./Path"
-import { DefaultLayout } from "@/Layouts"
+import routes from "./path"
+import { DefaultLayout } from "@/layouts"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import React, { Fragment } from "react"

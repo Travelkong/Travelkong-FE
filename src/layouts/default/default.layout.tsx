@@ -1,7 +1,5 @@
-import { FooterComponent } from "@/Modules/Shared/Footer"
-import { HeaderComponent } from "@/Modules/Shared/Header"
-
-import React from "react"
+import { FooterComponent } from "@/modules/shared/footer"
+import { HeaderComponent } from "@/modules/shared/header"
 
 export type DefaultLayoutProps = {
   children: React.ReactNode

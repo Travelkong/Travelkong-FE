@@ -1,5 +1,3 @@
-import React from "react"
-
 const HomePage: React.FC = () => {
   return (
     <>
@@ -9,7 +7,7 @@ const HomePage: React.FC = () => {
         <About />
       */}
       <div>
-        <h1 className="flex justify-center items-center font-sans text-xl">
+        <h1 className="flex items-center justify-center font-sans text-xl">
           Blogs
         </h1>
         {/*<Blogs /> */}
